@@ -1,0 +1,15 @@
+.env
+.longbridge_tokens.json
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+*.csv
+*.xlsx
+data/
+.DS_Store
+.vscode/
+.claude/

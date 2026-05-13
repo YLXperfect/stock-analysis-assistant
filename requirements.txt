@@ -1,0 +1,21 @@
+# ── 核心框架 ───────────────────────────
+langchain>=1.2
+langchain-openai>=1.2
+langgraph>=1.1
+langgraph-checkpoint>=4.0
+
+# ── 配置管理 ───────────────────────────
+pydantic>=2.0
+pydantic-settings>=2.0
+python-dotenv>=1.0
+
+# ── 数据分析 ───────────────────────────
+pandas>=2.0
+numpy>=1.26
+
+# ── UI ─────────────────────────────────
+rich>=13.0
+
+# ── 数据源 ─────────────────────────────
+longbridge>=4.0
+yfinance>=0.2.40

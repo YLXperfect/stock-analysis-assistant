@@ -1,0 +1,37 @@
+[project]
+name = "stock-analysis-assistant"
+version = "0.2.0"
+description = "Multi-Agent stock analysis system — 4-agent LangGraph orchestration with Longbridge SDK"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=1.2",
+    "langchain-openai>=1.2",
+    "langgraph>=1.1",
+    "langgraph-checkpoint>=4.0",
+    "longbridge>=4.0",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "python-dotenv>=1.0",
+    "rich>=13.0",
+    "pandas>=2.0",
+    "numpy>=1.26",
+    "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.5",
+]
+
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
